@@ -1,0 +1,98 @@
+@charset "utf-8";
+/* CSS Document */
+@media all and (min-width:1440px){
+	#card{
+		position:absolute;
+		width:30%;
+		height:100%;
+		z-index: 2;
+		opacity: .99;
+		left:35%;
+	}
+	#cardimage{
+		position:absolute;
+		width:50%;
+		top:25%;
+		left:15%;
+	}
+	#cardback{
+		position:absolute;
+		width:50%;
+		top:25%;
+		left:15%;
+	}
+	#cardbacktext{
+		position:absolute;
+		width:50%;
+		top:25%;
+		left:15%;
+	}
+}
+@media all and (max-width:1440px){
+	#card{
+		position:absolute;
+		width:60%;
+		height:100%;
+		z-index: 2;
+		opacity: .99;
+		left:20%;
+	}
+	#cardimage{
+		position:absolute;
+		width:50%;
+		top:15%;
+		left:15%;
+	}
+	#cardback{
+		position:absolute;
+		width:50%;
+		top:15%;
+		left:15%;
+	}
+	#cardbacktext{
+		position:absolute;
+		width:50%;
+		top:15%;
+		left:15%;
+	}
+}
+@media all and (max-width:1028px){
+	#cardimage{
+		position:absolute;
+		width:50%;
+		top:20%;
+		left:15%;
+	}
+	#cardback{
+		position:absolute;
+		width:50%;
+		top:20%;
+		left:15%;
+	}
+	#cardtext{
+		position:absolute;
+		width:50%;
+		top:20%;
+		left:15%;
+	}
+}
+@media all and (max-width:768px){
+	#cardimage{
+		position:absolute;
+		width:50%;
+		top:30%;
+		left:15%;
+	}
+	#cardback{
+		position:absolute;
+		width:50%;
+		top:30%;
+		left:15%;
+	}
+	#cardtext{
+		position:absolute;
+		width:50%;
+		top:30%;
+		left:15%;
+	}
+}
