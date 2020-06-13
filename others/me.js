@@ -34,6 +34,7 @@ $(document).on("mousemove", function(e){
 		halfarea = $('#cardimage').width()/2;
 		
 		if(innerWidth/2-halfarea<=nowleft&&nowleft<=innerWidth/2+halfarea){
+			$("#cardimage").css("transform", "translateX(0)");
 			direct=0;
 		}
 		if(nowleft>positionleft+20){
@@ -77,4 +78,5 @@ $(document).on("mouseover","#cardimage", function(){
 $(document).on("mouseleave","#cardimage", function(){
 	overevent=false;
 });
+$(document).on("click","#gotohome_button", function(){window.location="../index.html";});
 $(document).on("click","#return_button", function(){window.location.reload();});
