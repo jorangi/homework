@@ -30,6 +30,8 @@
 			height:100px;
 			border-bottom: 1px solid #D8D8D8;
 			background-color: white;
+			z-index: 100;
+			opacity: .99;
 		}
 		nav{
 			position:fixed;
@@ -38,11 +40,13 @@
 			margin-top:100px;
 			border-bottom: 1px solid #D8D8D8;
 			background-color: white;
-			z-index: 10;
+			z-index: 100;
+			opacity: .99;
 		}
 		nav li{
 			display:inline-block;
 			margin:20px 30px;
+			overflow: hidden;
 		}
 		nav li a{
 			padding-bottom:26px;
@@ -54,7 +58,7 @@
 		}
 		#float_back{
 			width:1300px;
-			height:300px;
+			height:0px;
 			background-color:white;
 			border-bottom:1px solid #D8D8D8;
 			position:absolute;
@@ -70,28 +74,32 @@
 		}
 		aside{
 			position:fixed;
-			top:400px;
+			top:300px;
 			right:5%;
 			float:right;
 			margin-top:10px;
+			font-weight: bold;
 		}
 		aside li{
-			width:70px;
-			height:70px;
+			width:90px;
+			height:90px;
 			text-align: right;
-			margin-bottom: 30px;
-			border:1px #AFAFAF solid;
+			margin-bottom: 20px;
 			background-color: #DBDBDB;
 			border-radius: 50px 50px;
 			text-align: center;
+			cursor:pointer;
+			margin-left:65px;
 		}
 		aside li:nth-child(1){
 			width:140px;
 			text-align: right;
-			margin-bottom: 30px;
+			margin-bottom: -20px;
 			border:none;
 			background-color: transparent;
 			border-radius: 0px;
+			cursor:default;
+			margin-left:0;
 		}
 		footer{
 			width:1300px;
@@ -245,6 +253,12 @@
 		}
 		#sub2{
 			background-color:white;
+			font-size:10pt;
+			z-index: 1;
+			opacity: .99;
+		}
+		#sub2 li:hover a{
+			color:#251270;
 		}
 		#sub2 h2{
 			position:absolute;
@@ -271,19 +285,57 @@
 			/*transform:scale(1.1);*/
 		}
 		#sub3{
-			
+			width:680px;
+			height:250px;
+			border:1px solid #A3A3A3;
+			background-color: white;
+			float:left;
 		}
-		#sub3 li{
+		#sub3 ul:nth-child(1){
+			margin-top:25px;
+			margin-left:5px;
+		}
+		#sub3 ul:nth-child(1) li{
+			display:inline;
+			margin-left:15px;
+			cursor:pointer;
+		}
+		#sub3 ul:nth-child(1) li:last-child{
+			display:inline;
+			margin-left:200px;
+			color:#5C5C5C;
+		}
+		#art{
+			width:380px;
+			height:155px;
+			position:absolute;
+			margin-left:360px;
+			margin-top:40px;
+		}
+		#sub3 ul:last-child li{
+			margin-bottom: 10px;
+			list-style:square;
+		}
+		#sub3 ul{
+			display: inline-block;
+		}
+		#sub4{
+			width:360px;
+			height:250px;
+			float:left;
+			margin-left:30px;
+		}
+		#sub5 li{
 			display:inline-block;
 			margin-right:16px;
 			overflow: hidden;
 		}
-		#sub3 img{
+		#sub5 img{
 			width:250px;
 			height:180px;
 			display:block;
 		}
-		#sub3 img:hover{
+		#sub5 img:hover{
 			transform: scale(1.1);
 			transition: transform 1s ease;
 		}
@@ -294,6 +346,107 @@
 		#customer{
 			float:right;
 			margin:10px 0 0 10px;
+		}
+		#sub4buttons li{
+			width:120px;
+			box-sizing: border-box;
+			height:40px;
+			border:1px solid #A3A3A3;
+			float:left;
+			background-color: #E3E6E9;
+			cursor: pointer;
+		}
+		#sub4buttons li:nth-child(2){
+			border-left:none;
+			border-right:none;
+		}
+		#sub4buttons a{
+			position: absolute;
+			margin-left:30px;
+			margin-top:10px;
+		}
+		#sub4contents{
+			width:360px;
+			height:210px;
+			margin-top:40px;
+			background-color:white;
+			border: 1px solid #A3A3A3;
+			border-top:none;
+		}
+		#alphabet{
+			width:330px;
+			height:50px;
+			margin-left:15px;
+			padding-top:30px;
+		}
+		#alphabet li{
+			margin-left:1px;
+			margin-right:2px;
+			margin-bottom: 3px;
+			width:43px;
+			padding-top:3px;
+			padding-bottom: 3px;
+			float:left;
+			border:1px solid #A3A3A3;
+			background-color:#E3E6E9;
+			text-align: center;
+			color:#363556;
+			cursor: pointer;
+		}
+		#alphabet li:hover{
+			color:white;
+			background-color: #129721;
+			border-color:transparent;
+		}
+		#sub4tags{
+			margin-top:70px;
+			margin-left:15px;
+			font-size:10pt;
+		}
+		#sub4tags li{
+			display:inline;
+			padding:4px 10px;
+			margin-left:5px;
+			border-radius: 50px;
+			border:1px solid #C5BFC0;
+			cursor:pointer;
+		}
+		#sub4tags li:last-child{
+			background-color: #E1E1E1;
+		}
+		#sub4con2 li{
+			float:left;
+			width:70px;
+			margin:5px 20px 20px 20px;
+			text-align: center;
+			cursor:pointer;
+		}
+		#sub4con2 li:nth-child(1), #sub4con2 li:nth-child(2), #sub4con2 li:nth-child(3){
+			margin-top:30px;
+		}
+		#sub4con2 li:nth-child(1), #sub4con2 li:nth-child(5){
+			margin-left:30px;
+		}
+		#sub4con3 li{
+			width:90px;
+			border:1px #A3A3A3 solid;
+			border-radius: 3px;
+			float:left;
+			margin:10px;
+			text-align: center;
+			padding: 8px 0px;
+			cursor:pointer;
+			color:#707070;
+		}
+		#sub4con3 li:hover{
+			border-color:#59C978;
+			color:#187336;
+		}
+		#sub4con3 li:nth-child(1), #sub4con3 li:nth-child(5), #sub4con3 li:nth-child(9){
+			margin-left:20px;
+		}
+		#sub4con3 li:nth-child(1), #sub4con3 li:nth-child(2), #sub4con3 li:nth-child(3){
+			margin-top:25px;
 		}
 	</style>
 </head>
@@ -674,7 +827,7 @@
 			$('#float_back').css("height","350px");
 		});
 		$('nav').mouseleave(function(){
-			$('#float_back').css("display","none");
+			$('#float_back').css("height","0px");
 			for(var i=1; i<10; i++){
 				$('#menu'+i).css("display","none");
 			}
@@ -682,14 +835,14 @@
 	</script>
 	<div class="clear"></div>
 	<section style="margin-top:170px;">
-		<img src="image/visual_default_main_01.jpg" width="1080px">
+		<img style="cursor:pointer" onClick="location.href='http://ncov.mohw.go.kr/'" src="image/visual_default_main_01.jpg" width="1080px">
 	</section>
 	<aside>
 		<ul>
-			<li> 사용자별 맞춤 메뉴 </li>
-			<li> <br>일반인 </li>
-			<li> <br>연구자 </li>
-			<li> <br>언론인 </li>
+			<li> 사용자별<br>맞춤메뉴 </li>
+			<li> <img onMouseOver="this.src='image/icon7_hover.png'" onMouseOut="this.src='image/icon7.png'" src="image/icon7.png" width="100%"> </li>
+			<li> <img onMouseOver="this.src='image/icon8_hover.png'" onMouseOut="this.src='image/icon8.png'" src="image/icon8.png" width="100%"> </li>
+			<li> <img onMouseOver="this.src='image/icon9_hover.png'" onMouseOut="this.src='image/icon9.png'" src="image/icon9.png" width="100%"> </li>
 		</ul>
 	</aside>
 	<section>
@@ -732,8 +885,149 @@
 			</li>
 		</ul>
 	</section>
+	<section style="width:1080px; height:250px;">
+		<div id="sub3">
+			<ul>
+				<li>보도자료</li>
+				<li>공지사항</li>
+				<li>채용공고</li>
+				<li>주간건강과질병</li>
+				<li>더보기+</li>
+			</ul>
+			<hr style="width:630px; margin-top:5px; margin-left:25px">
+			<ul style="width:310px; position:absolute; margin-left:20px; margin-top:20px; display:inline-block;">
+				<li style="font-size: 15pt;">코로나바이러스감염증-19 국내...</li>
+				<li style="font-size: 10pt; margin-top:10px;">
+				코로나바이러스감염증-19 국내 발생<br> 현황(7월 1일, 정례브리핑)□질<br>
+				병관리본부 중앙방역대책본부(본부장<br> 정은경)는 7월 1일 0시 현재, 지<br>
+				역사회에서 36명, 해외유입으로.....
+				</li>
+				<li style="font-size: 10pt; margin-top:10px; color:#6F6F6F;">
+					2020-07-01
+				</li>
+			</ul>
+			<ul id="art">
+				<li>코로나바이러스감염증-19 국내...</li>
+				<li>말라리아 감염 모기 확인에 따...</li>
+				<li>코로나19 치료제 렘데시비르...</li>
+				<li>코로나19 등 감염병 대응을...</li>
+			</ul>
+		</div>
+		<div id="sub4">
+			<ul id="sub4buttons">
+				<li onClick="subfour(1)"><a style="margin-left:20px;">감염병정보</a></li>
+				<li onClick="subfour(2)"><a>건강정보</a></li>
+				<li onClick="subfour(3)"><a>손상정보</a></li>
+			</ul>
+			<ul id="sub4contents">
+			<div id="sub4con1">
+			<ul id="alphabet">
+				<li>ㄱ</li>
+				<li>ㄴ</li>
+				<li>ㄷ</li>
+				<li>ㄹ</li>
+				<li>ㅁ</li>
+				<li>ㅂ</li>
+				<li>ㅅ</li>
+				<li>ㅇ</li>
+				<li>ㅈ</li>
+				<li>ㅊ</li>
+				<li>ㅋ</li>
+				<li>ㅌ</li>
+				<li>ㅍ</li>
+				<li>ㅎ</li>
+			</ul>
+			<ul id="sub4tags">
+				<li>메르스</li>
+				<li>인플루엔자</li>
+				<li>지카바이러</li>
+				<li>결핵</li>
+				<br><br>
+				<li>노로바이러스</li>
+				<li>A형간염</li>
+				<li>더보기+</li>
+			</ul>
+			</div>
+			
+			<div id="sub4con2" style="display:none">
+			<ul>
+				<li onMouseOut="subfourtwo(0)" onMouseOver="subfourtwo(1)"><img src="image/sub4_button1.png"><br>전체</li>
+				<li onMouseOut="subfourtwo(0)" onMouseOver="subfourtwo(2)"><img src="image/sub4_button2.png"><br>주요주제</li>
+				<li onMouseOut="subfourtwo(0)" onMouseOver="subfourtwo(3)"><img src="image/sub4_button3.png"><br>노인</li>
+				<br>
+				<li onMouseOut="subfourtwo(0)" onMouseOver="subfourtwo(4)"><img src="image/sub4_button4.png"><br>남성</li>
+				<li onMouseOut="subfourtwo(0)" onMouseOver="subfourtwo(5)"><img src="image/sub4_button5.png"><br>여성</li>
+				<li onMouseOut="subfourtwo(0)" onMouseOver="subfourtwo(6)"><img src="image/sub4_button6.png"><br>소아</li>
+			</ul>
+			</div>
+			<div id="sub4con3" style="display: none">
+			<ul>
+				<li>교통사고</li>
+				<li>어린이손상</li>
+				<li>익수</li>
+				<br>
+				<li>자해/자살</li>
+				<li>직업손상</li>
+				<li>질식</li>
+				<br>
+				<li>추락/낙상</li>
+				<li>폭력/살해</li>
+				<li>화상</li>
+			</ul>
+			</div>
+			</ul>
+		</div>
+	</section>
+	<script>
+		$('#sub4buttons li:nth-child(1)').css("background-color","white");
+		$('#sub4buttons li:nth-child(1)').css("border-bottom","none");
+		$('#sub4buttons li:nth-child(1)').css("border-top","1px solid #301E8A");
+		
+		var sub4count=1;
+		var sub4count2 =0;
+		
+		function subfour(sub4count){
+			$('#sub4con1').css("display","none");
+			$('#sub4con2').css("display","none");
+			$('#sub4con3').css("display","none");
+			$('#sub4con'+sub4count).css("display","block");
+			$('#sub4buttons li').css("background-color","#E3E6E9");
+			$('#sub4buttons li').css("border","1px solid #A3A3A3");
+			
+			if(sub4count==2){
+				$('#sub4buttons li:nth-child(1)').css("border-right","none");	
+				$('#sub4buttons li:nth-child(3)').css("border-left","none");	
+			}else{
+				$('#sub4buttons li:nth-child(2)').css("border-right","none");	
+				$('#sub4buttons li:nth-child(2)').css("border-left","none");	
+			}
+			
+			$('#sub4buttons li:nth-child('+sub4count+')').css("background-color","white");
+			$('#sub4buttons li:nth-child('+sub4count+')').css("border-bottom","none");
+			$('#sub4buttons li:nth-child('+sub4count+')').css("border-top","1px solid #301E8A");
+		}
+		
+		function subfourtwo(sub4count2){
+			if(sub4count2<4){
+				$('#sub4con2 li:nth-child('+sub4count2+') img').attr("src", "image/sub4_button"+sub4count2+"_hover.png");
+			}
+			if(sub4count2>=4){
+				sub4count21=sub4count2+1;
+				$('#sub4con2 li:nth-child('+sub4count21+') img').attr("src", "image/sub4_button"+sub4count2+"_hover.png");
+			}
+			
+			if(sub4count2==0){
+				$('#sub4con2 li:nth-child(1) img').attr("src", "image/sub4_button1.png");
+				$('#sub4con2 li:nth-child(2) img').attr("src", "image/sub4_button2.png");
+				$('#sub4con2 li:nth-child(3) img').attr("src", "image/sub4_button3.png");
+				$('#sub4con2 li:nth-child(5) img').attr("src", "image/sub4_button4.png");
+				$('#sub4con2 li:nth-child(6) img').attr("src", "image/sub4_button5.png");
+				$('#sub4con2 li:nth-child(7) img').attr("src", "image/sub4_button6.png");
+			}
+		}
+	</script>
 	<section>
-		<ul id="sub3">
+		<ul id="sub5">
 			<li><img src="image/ironman.png"></li>
 			<li><img src="image/camel.png"></li>
 			<li><img src="image/image.png"></li>
